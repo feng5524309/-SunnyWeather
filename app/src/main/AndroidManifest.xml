@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tsn.sunnyweather">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <!--全局获取context需要将application的名字改为.SunnyWeatherApplication-->
     <application
+        android:name=".SunnyWeatherApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
